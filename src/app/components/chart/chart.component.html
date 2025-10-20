@@ -1,0 +1,17 @@
+<div class="flex justify-between items-center mb-4">
+  <h2 class="text-xl font-semibold">Gráfico de temperatura</h2>
+
+ <select
+  [(ngModel)]="mode"
+  (ngModelChange)="changeMode($event)"
+  class="border border-gray-300 rounded p-2"
+>
+  <option value="realtime">Tiempo real (cada 5s)</option>
+  <option value="minute">Promedio por minuto</option>
+</select>
+
+
+</div>
+
+<div *ngIf="isLoading" class="text-gray-500">Cargando datos...</div>
+<canvas id="realtime"></canvas>
