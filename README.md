@@ -4,6 +4,13 @@ Aplicación web para visualizar datos de temperatura de forma continua con actua
 
 ---
 
+## 🌍 Demo en Producción
+
+✅ Aplicación desplegada y en funcionamiento:  
+🔗 https://meteologica-front-end.vercel.app/
+
+---
+
 ## 🚀 Tecnologías Utilizadas
 
 | Área | Tecnología |
