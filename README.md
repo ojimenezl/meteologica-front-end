@@ -27,3 +27,50 @@ Aplicación web para visualizar datos de temperatura de forma continua con actua
 
 ## ⚙️ Arquitectura del Sistema
 
+
+📌 El servidor envía datos cada vez que se registran cambios  
+📌 El cliente los consume sin polling, reduciendo carga
+
+Esto permite escalar a miles de registros por minuto sin perder rendimiento ✅
+
+---
+
+## 📊 Funcionalidades
+
+| Función | Descripción |
+|--------|-------------|
+| 🔴 Modo tiempo real | Muestra datos segundo a segundo con un buffer inteligente |
+| ⏱️ Modo minutar | Predice y representa próximos 15 minutos según datos procesados |
+| 🔄 Auto-actualización | Gráfico dinámico sin recarga de página |
+| ⚡ Bajo consumo de recursos | Perfecto para altos volúmenes de datos |
+
+---
+
+## 🧠 Decisiones Técnicas
+
+✅ Se utiliza **SSE** en lugar de WebSockets cuando solo se requiere comunicación servidor → cliente  
+✅ El gráfico mantiene un **límite de puntos en memoria** para evitar saturación  
+✅ Datos minutar se consultan bajo demanda optimizando tráfico  
+✅ Angular seleccionado para modularidad y robustez en actualizaciones
+
+---
+
+## 🎨 Resultado artístico (UI/UX)
+
+- Diseño minimalista
+- Colores suaves que permiten claridad de lectura
+- Animaciones fluidas sin afectar rendimiento
+- Información clave destacada
+
+📌 Se prioriza **legibilidad y visibilidad** sobre decoraciones innecesarias
+
+---
+
+## 🔥 Cómo ejecutar localmente
+
+```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm start
