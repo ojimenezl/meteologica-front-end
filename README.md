@@ -1,59 +1,29 @@
-# FrontEnd
+# 🌡️ Meteológica – Monitor de Temperatura en Tiempo Real
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+Aplicación web para visualizar datos de temperatura de forma continua con actualización en tiempo real mediante **Server-Sent Events (SSE)**. La interfaz gráfica está desarrollada en **Angular 18** y presenta una gráfica dinámica con enfoque eficiente para grandes volúmenes de datos.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Tecnologías Utilizadas
 
-```bash
-ng serve
-```
+| Área | Tecnología |
+|------|------------|
+| Frontend | Angular + Chart.js |
+| Backend | Node.js + Express + SSE |
+| Despliegue | Vercel (Frontend) • Fly.io (Backend) |
+| Estilo visual | CSS nativo |
+| Gestión de datos | Promedios por minuto + puntos en vivo |
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🎯 Objetivo del Proyecto
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+✅ Mostrar datos en vivo sin sobrecargar el servidor  
+✅ Permitir consulta eficiente de datos históricos por minuto  
+✅ Visualización clara de la información  
+✅ Diseño ligero y accesible
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ⚙️ Arquitectura del Sistema
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
