@@ -1,9 +1,9 @@
-<div *ngIf="latestData">
-  <h3>Datos en tiempo real</h3>
-  <p>Hora: {{ localTime }}</p>
-  <p>Temperatura: {{ latestData.temperatureC }} °C</p>
-  <p>Energía producida: {{ latestData.energyKWh }} kWh</p>
-  <p>Valor bruto: {{ latestData.rawValue }}</p>
+<div *ngIf="latestData" class="p-4 bg-dark text-white rounded shadow mb-3 mx-auto" style="max-width: 400px;">
+  <h3 class="text-primary fw-bold">Datos en tiempo real</h3>
+  <p><strong>Hora:</strong> {{ localTime }}</p>
+  <p><strong>Temperatura:</strong> {{ latestData.temperatureC }} °C</p>
+  <p><strong>Energía producida:</strong> {{ latestData.energyKWh }} kWh</p>
+  <p><strong>Valor bruto:</strong> {{ latestData.rawValue }}</p>
 </div>
-<div *ngIf="!latestData">Cargando datos...</div>
 
+<div *ngIf="!latestData" class="text-secondary text-center">Cargando datos...</div>

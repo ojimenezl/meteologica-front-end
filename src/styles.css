@@ -1,0 +1,6 @@
+body {
+  color: #d2d2d2; /* Elige un color para el texto, que también será el fondo si usas currentColor */
+  background-color: #2d2b38;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
