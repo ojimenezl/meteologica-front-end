@@ -1,5 +1,5 @@
 export interface MinuteData {
-  minute: string;          // "HH:MM"
+  minute: string;          
   averageTemperatureC: number;
-  energyKWh?: number;      // opcional
+  energyKWh?: number;   
 }

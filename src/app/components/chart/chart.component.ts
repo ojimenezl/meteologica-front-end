@@ -102,11 +102,6 @@ private async loadMinuteData(): Promise<void> {
     this.isLoading = false;
   }
 }
-
-
-
-
-
   private addPoint(data: TemperatureValue): void {
     const now = new Date();
     const timeLabel = now.toLocaleTimeString('es-ES', { hour12: false });
@@ -126,8 +121,6 @@ private async loadMinuteData(): Promise<void> {
   if (mode === 'realtime') this.startRealtime();
   else this.loadMinuteData();
 }
-
-
   ngOnDestroy(): void {
     this.dataSub?.unsubscribe();
     this.chart?.destroy();

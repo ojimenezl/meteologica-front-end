@@ -7,12 +7,12 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DataService {
-  // 🔹 base correcta con /api
+  // base correcta con /api
   private baseUrl = 'https://meteologica-back-end.fly.dev/api';
 
   constructor(private ngZone: NgZone, private http: HttpClient) {}
 
-  // 🔹 Tiempo real (usa /api/stream)
+  // Tiempo real (usa /api/stream)
   getTemperatureStream(): Observable<TemperatureValue> {
     return new Observable(observer => {
       const evtSource = new EventSource(`${this.baseUrl}/stream`);
@@ -27,7 +27,7 @@ export class DataService {
     });
   }
 
-  // 🔹 Promedios por minuto (usa /api/minutes)
+  // Promedios por minuto (usa /api/minutes)
   getMinuteAverages(): Observable<any[]> {
     return this.http.get<any[]>(`${this.baseUrl}/minutes`);
   }
